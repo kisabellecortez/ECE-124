@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+--Lakshana Kathirkamaranjan
+--Isabelle Cortez
+
+entity vacation_mux is
+
+
+port ( --declaring inpput and output variables
+
+
+	desired_temp, vacation_temp : in std_logic_vector(3 downto 0);
+	vacation_mode								: in std_logic;
+	mux_temp									: out std_logic_vector(3 downto 0) -- The hex output
+);
+
+end  second_multi;
+
+
+
+architecture mux2_logic of second_multi is
+
+begin
+
+--for the multyiplexing of four hex input busses
+--
+with mux2_select select
+		--assigning the variable of each of the logic operations 
+hex_out_2 <= hex_num0_2 when '0',
+				hex_num1_2 when  '1';
+end mux2_logic;
