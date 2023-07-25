@@ -1,15 +1,16 @@
---Lakshana Kathirkamaranjan
---Isabelle Cortez
+--Author: Group 13, Lakshana Kathirkamaranjan, Isabelle Cortez
+--July 21, 2023
+--Lab 4
 
 library ieee;
 use ieee.std_logic_1164.all;
 
 
 entity PB_inverters is port (
-	rst_n: in std_logic;
-	rst: out std_logic;
- 	pb_n	: in  std_logic_vector (3 downto 0);
-	pb	: out	std_logic_vector(3 downto 0)							 
+	rst_n				: in std_logic;
+	rst					: out std_logic;
+ 	pb_n				: in  std_logic_vector (3 downto 0);
+	pb					: out	std_logic_vector(3 downto 0) 						 
 	); 
 end PB_inverters;
 

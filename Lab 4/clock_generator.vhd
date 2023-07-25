@@ -1,5 +1,6 @@
---Lakshana Kathirkamaranjan
---Isabelle Cortez
+--Author: Group 13, Lakshana Kathirkamaranjan, Isabelle Cortez
+--July 21, 2023
+--Lab 4
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -15,10 +16,10 @@ entity Clock_generator is
 	port
 	(
 		sim_mode			: in boolean;		-- used to select the clocking frequency for the output signals "sm_clken" and "blink".
-		reset				: in std_logic;
-        clkin      			: in std_logic; -- input used for counter and register clocking
-		sm_clken			: out std_logic; -- output used to enbl the sm to advance by 1 clk.
-		blink		  		: out std_logic  -- output used for blink signal (1/4 the rate of the sm_clken)
+		reset				: in std_logic;		-- used to store reset value
+        clkin      			: in std_logic; 	-- input used for counter and register clocking
+		sm_clken			: out std_logic; 	-- output used to enbl the sm to advance by 1 clk.
+		blink		  		: out std_logic  	-- output used for blink signal (1/4 the rate of the sm_clken)
 	);
 
 end entity;
@@ -28,7 +29,7 @@ architecture rtl of Clock_generator is
 signal digital_counter 					: std_logic_vector(24 downto 0);
 signal clk_1hz, clk_4hz					: std_logic;
 signal sim_clk_blink, sim_clk_enbl		: std_logic;
-signal clk_reg_extend					: std_logic_vector(1 downto 0); -- pipeline used to create a single clock enable pulse signal
+signal clk_reg_extend					: std_logic_vector(1 downto 0); 	-- pipeline used to create a single clock enable pulse signal
 signal blink_sig 						: std_logic;
 
 

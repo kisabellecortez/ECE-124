@@ -1,9 +1,12 @@
---Lakshana Kathirkamaranjan
---Isabelle Cortez
+--Author: Group 13, Lakshana Kathirkamaranjan, Isabelle Cortez
+--July 21, 2023
+--Lab 4
 
 library ieee;
 use ieee.std_logic_1164.all;
 
+
+--*Takes in Synchronizer output and holds it as a pending value  output to the state machine*
 
 entity holding_register is port ( --creating input and output variables 
 
