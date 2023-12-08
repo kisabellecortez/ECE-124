@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kimcorte/ECE-124/Lab2/simulation/qsim
+Ehard_block
+Z1 w1685560389
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 hIbO9BBYYWGW_8lVV<F893
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 [A0e0UP4j3EDHZ:h0KOS^3
+R0
+Z8 8LogicalStep_Lab2_top.vho
+Z9 FLogicalStep_Lab2_top.vho
+l0
+L35
+Vhj[i;a0dD85B`o1JPT^cg2
+!s100 3A]XnMhF<;9mKUe5mn3aM1
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1685560390
+!i10b 1
+Z12 !s108 1685560390.000000
+Z13 !s90 -work|work|LogicalStep_Lab2_top.vho|
+Z14 !s107 LogicalStep_Lab2_top.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 hj[i;a0dD85B`o1JPT^cg2
+l64
+L50
+Vb>R0MC?JSoM;9^5LiLRdB0
+!s100 fKQbZo5`HOoKjm4g@4@H`0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Elogicalstep_lab2_top
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L77
+VQeFWFRJ_VD]hc?=81TXe40
+!s100 9R;[9`eV1ih0oC3Ic6L8=1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 20 logicalstep_lab2_top 0 22 QeFWFRJ_VD]hc?=81TXe40
+l194
+L122
+V[RdikjCQcGX58AWU=2F<k1
+!s100 4P6FVfCM]OM?dD23e2m;P0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Elogicalstep_lab2_top_vhd_vec_tst
+Z17 w1685560382
+R5
+R6
+R0
+Z18 8Waveform1.vwf.vht
+Z19 FWaveform1.vwf.vht
+l0
+L32
+VjneBQNHSM1P=gCcDk<WbB3
+!s100 XLcK^^jGZE?j23Z:jfFoQ1
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|Waveform1.vwf.vht|
+Z21 !s107 Waveform1.vwf.vht|
+!i113 1
+R15
+R16
+Alogicalstep_lab2_top_arch
+R5
+R6
+Z22 DEx4 work 32 logicalstep_lab2_top_vhd_vec_tst 0 22 jneBQNHSM1P=gCcDk<WbB3
+l55
+L34
+Z23 V=8JfoKWSXh9OeA1]nG^i62
+Z24 !s100 bTHZMCa62<0@DKXY>=m_H0
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16

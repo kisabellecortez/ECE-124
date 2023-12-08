@@ -1,0 +1,260 @@
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
+
+// DATE "05/17/2023 16:30:48"
+
+// 
+// Device: Altera 10M08SAE144C8G Package EQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module LogicalStep_Lab1_top (
+	leds,
+	sw,
+	PB);
+output 	[7:0] leds;
+input 	[1:1] sw;
+input 	[1:0] PB;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \leds[7]~output_o ;
+wire \leds[6]~output_o ;
+wire \leds[5]~output_o ;
+wire \leds[4]~output_o ;
+wire \leds[3]~output_o ;
+wire \leds[2]~output_o ;
+wire \leds[1]~output_o ;
+wire \leds[0]~output_o ;
+wire \sw[1]~input_o ;
+wire \PB[1]~input_o ;
+wire \PB[0]~input_o ;
+wire \inst5|OUT_4~0_combout ;
+wire \inst5|OUT_3~0_combout ;
+wire \inst5|OUT_2~0_combout ;
+
+
+fiftyfivenm_io_obuf \leds[7]~output (
+	.i(!\inst5|OUT_4~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\leds[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \leds[7]~output .bus_hold = "false";
+defparam \leds[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+fiftyfivenm_io_obuf \leds[6]~output (
+	.i(!\inst5|OUT_3~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\leds[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \leds[6]~output .bus_hold = "false";
+defparam \leds[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+fiftyfivenm_io_obuf \leds[5]~output (
+	.i(\inst5|OUT_2~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\leds[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \leds[5]~output .bus_hold = "false";
+defparam \leds[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+fiftyfivenm_io_obuf \leds[4]~output (
+	.i(!\inst5|OUT_2~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\leds[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \leds[4]~output .bus_hold = "false";
+defparam \leds[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+fiftyfivenm_io_obuf \leds[3]~output (
+	.i(!\inst5|OUT_4~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\leds[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \leds[3]~output .bus_hold = "false";
+defparam \leds[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+fiftyfivenm_io_obuf \leds[2]~output (
+	.i(!\inst5|OUT_3~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\leds[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \leds[2]~output .bus_hold = "false";
+defparam \leds[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+fiftyfivenm_io_obuf \leds[1]~output (
+	.i(\inst5|OUT_2~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\leds[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \leds[1]~output .bus_hold = "false";
+defparam \leds[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+fiftyfivenm_io_obuf \leds[0]~output (
+	.i(!\inst5|OUT_2~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\leds[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \leds[0]~output .bus_hold = "false";
+defparam \leds[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+fiftyfivenm_io_ibuf \sw[1]~input (
+	.i(sw[1]),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(\sw[1]~input_o ));
+// synopsys translate_off
+defparam \sw[1]~input .bus_hold = "false";
+defparam \sw[1]~input .listen_to_nsleep_signal = "false";
+defparam \sw[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+fiftyfivenm_io_ibuf \PB[1]~input (
+	.i(PB[1]),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(\PB[1]~input_o ));
+// synopsys translate_off
+defparam \PB[1]~input .bus_hold = "false";
+defparam \PB[1]~input .listen_to_nsleep_signal = "false";
+defparam \PB[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+fiftyfivenm_io_ibuf \PB[0]~input (
+	.i(PB[0]),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(\PB[0]~input_o ));
+// synopsys translate_off
+defparam \PB[0]~input .bus_hold = "false";
+defparam \PB[0]~input .listen_to_nsleep_signal = "false";
+defparam \PB[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+fiftyfivenm_lcell_comb \inst5|OUT_4~0 (
+// Equation(s):
+// \inst5|OUT_4~0_combout  = \sw[1]~input_o  $ (\PB[1]~input_o  $ (\PB[0]~input_o ))
+
+	.dataa(\sw[1]~input_o ),
+	.datab(\PB[1]~input_o ),
+	.datac(\PB[0]~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst5|OUT_4~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst5|OUT_4~0 .lut_mask = 16'h9696;
+defparam \inst5|OUT_4~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+fiftyfivenm_lcell_comb \inst5|OUT_3~0 (
+// Equation(s):
+// \inst5|OUT_3~0_combout  = \sw[1]~input_o  $ (((\PB[1]~input_o ) # (\PB[0]~input_o )))
+
+	.dataa(gnd),
+	.datab(\PB[1]~input_o ),
+	.datac(\PB[0]~input_o ),
+	.datad(\sw[1]~input_o ),
+	.cin(gnd),
+	.combout(\inst5|OUT_3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst5|OUT_3~0 .lut_mask = 16'h03FC;
+defparam \inst5|OUT_3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+fiftyfivenm_lcell_comb \inst5|OUT_2~0 (
+// Equation(s):
+// \inst5|OUT_2~0_combout  = \sw[1]~input_o  $ (((\PB[1]~input_o  & \PB[0]~input_o )))
+
+	.dataa(gnd),
+	.datab(\sw[1]~input_o ),
+	.datac(\PB[1]~input_o ),
+	.datad(\PB[0]~input_o ),
+	.cin(gnd),
+	.combout(\inst5|OUT_2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst5|OUT_2~0 .lut_mask = 16'h3CCC;
+defparam \inst5|OUT_2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign leds[7] = \leds[7]~output_o ;
+
+assign leds[6] = \leds[6]~output_o ;
+
+assign leds[5] = \leds[5]~output_o ;
+
+assign leds[4] = \leds[4]~output_o ;
+
+assign leds[3] = \leds[3]~output_o ;
+
+assign leds[2] = \leds[2]~output_o ;
+
+assign leds[1] = \leds[1]~output_o ;
+
+assign leds[0] = \leds[0]~output_o ;
+
+endmodule
